@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: appserver
-        image: thetips4you/nodeapp:latest
+        image: gcr.io/neat-drummer-351518/staging-cluster:latest
         ports:
         - containerPort: 3000
 ---
