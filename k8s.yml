@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app
+      app: nodeapp-deployment
   template:
     metadata:
       labels:
-        app: app 
+        app: nodeapp-deployment
     spec:
       containers:
       - name: appserver
@@ -26,9 +26,9 @@ metadata:
   name: nodeapp-service
 spec:
   selector:
-    app: app 
+    app: nodeapp-deployment 
   type: LoadBalancer
   ports:
   - protocol: TCP
-    port: 5000
+    port: 3000
     targetPort: 3000
