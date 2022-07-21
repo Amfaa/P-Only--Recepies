@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: appserver
-        image: gcr.io/neat-drummer-351518/staging-cluster:latest
+        image: amfaa/backend-k8s:latest
         ports:
         - containerPort: 3000
 ---
